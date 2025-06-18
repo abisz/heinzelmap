@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Biennale Bold';
+    src: url('https://static1.squarespace.com/static/67cec7bddfae0534e033c840/t/682ee51e25e8911e68741149/1747903774349/Biennale+Bold.woff');
+}
+
+@font-face {
+    font-family: 'Biennale Book';
+    src: url('https://static1.squarespace.com/static/67cec7bddfae0534e033c840/t/682ee53912b24a491736eac5/1747903801334/Biennale+Book.woff');
+}
+
+* {
+    hyphens: auto;
+}
+
+p, a {
+    font-family: 'Biennale Book' !important;
+    letter-spacing: 0.05em;
+}
+
+h1, h2, h3, h4, h5, h6, .list-section-title p {
+    font-family: 'Biennale Bold' !important;
+    letter-spacing: 0.05em;
+}
+
+/
+/
+Navigation
+.header .header-layout-nav-right .header-nav .header-nav-item--folder .header-nav-folder-content {
+    text-align: left;
+    left: 0;
+    right: unset;
+}
+
+/
+/
+Map
+.leaflet-interactive:focus {
+    outline: none;
+}
+
+/
+/
+mobile header image
+
+@media screen and (max-width: 640px) {
+    #header-section .section-background {
+        background-image: url(https://static1.squarespace.com/static/67cec7bddfae0534e033c840/t/6842bb87a40b626abf619850/1749203849633/mobile_background.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #header-section .section-background img {
+        display: none !important;
+    }
+
+}
+
+/
+/
+Counter
+.metrics-section {
+    width: 100%;
+    margin: 60px auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.metric {
+    flex: 1 1 220px;
+    min-width: 220px;
+    text-align: center;
+    padding: 24px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s;
+}
+
+.metric .icon {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 26px;
+}
+
+.metric .number {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+}
+
+.metric .desc {
+    font-size: 1em;
+    color: #555;
+    font-weight: 400;
+}
+
+@media (max-width: 700px) {
+    .metrics-section {
+        flex-direction: column;
+        gap: 24px;
+        padding: 24px 8px;
+    }
+
+    .metric {
+        min-width: 0;
+    }
+}
