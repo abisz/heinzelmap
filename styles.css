@@ -21,7 +21,6 @@ p, a {
 
 h1, h2, h3, h4, h5, h6, .list-section-title p {
     font-family: 'Biennale Bold' !important;
-    letter-spacing: 0.05em;
 }
 
 .header .header-layout-nav-right .header-nav .header-nav-item--folder .header-nav-folder-content {
