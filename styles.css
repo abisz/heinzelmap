@@ -8,9 +8,11 @@
     src: url('https://static1.squarespace.com/static/67cec7bddfae0534e033c840/t/682ee53912b24a491736eac5/1747903801334/Biennale+Book.woff');
 }
 
+/*
 * {
     hyphens: auto;
 }
+*/
 
 p, a {
     font-family: 'Biennale Book' !important;
@@ -22,25 +24,26 @@ h1, h2, h3, h4, h5, h6, .list-section-title p {
     letter-spacing: 0.05em;
 }
 
-/
-/
-Navigation
 .header .header-layout-nav-right .header-nav .header-nav-item--folder .header-nav-folder-content {
     text-align: left;
     left: 0;
     right: unset;
 }
 
-/
-/
-Map
 .leaflet-interactive:focus {
     outline: none;
 }
 
-/
-/
-mobile header image
+.tooltip-first-line {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #025061;
+}
+
+.tooltip-second-line {
+    font-size: 1em;
+    color: #025061;
+}
 
 @media screen and (max-width: 640px) {
     #header-section .section-background {
@@ -56,9 +59,7 @@ mobile header image
 
 }
 
-/
-/
-Counter
+/*Counter*/
 .metrics-section {
     width: 100%;
     margin: 60px auto;
