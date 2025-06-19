@@ -29,7 +29,7 @@ function initMap(mapId, zoomLevel) {
                                 color: district.color,
                                 weight: 0,
                                 fillColor: district.color,
-                                fillOpacity: 0.2
+                                fillOpacity: 0.5
                             };
                         },
                         onEachFeature: function(feature, layer) {
